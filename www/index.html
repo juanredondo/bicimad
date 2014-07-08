@@ -24,15 +24,13 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>BiciMAD</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+		<h1>BiciMAD</h1>
+        <iframe allowfullscreen="" frameborder="0" height="570" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" src="https://zenitram.cartodb.com/viz/b643c8ce-fa48-11e3-82b3-0e10bcd91c2b/embed_map?search=false&amp;shareable=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1&amp;sql=SELECT%20*%2C%20(availablebikes%3A%3Ainteger%2Bavailableplaces%3A%3Ainteger)%20as%20total_posts%2C%0A100*(availablebikes%3A%3Afloat%2Fnullif((availablebikes%3A%3Ainteger%2Bavailableplaces%3A%3Ainteger)%2C0))%20as%20availability%0AFROM%20bicimad&amp;sw_lat=40.40558820460202&amp;sw_lon=-3.7302875518798824&amp;ne_lat=40.43335959357837&amp;ne_lon=-3.65870475769043" webkitallowfullscreen="" width="100%"></iframe>
+		<div class="app">
+			
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
