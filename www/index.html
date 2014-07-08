@@ -28,14 +28,20 @@
     </head>
     <body>
 		<h1>BiciMAD</h1>
-        <iframe allowfullscreen="" frameborder="0" height="570" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" src="https://zenitram.cartodb.com/viz/b643c8ce-fa48-11e3-82b3-0e10bcd91c2b/embed_map?search=false&amp;shareable=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1&amp;sql=SELECT%20*%2C%20(availablebikes%3A%3Ainteger%2Bavailableplaces%3A%3Ainteger)%20as%20total_posts%2C%0A100*(availablebikes%3A%3Afloat%2Fnullif((availablebikes%3A%3Ainteger%2Bavailableplaces%3A%3Ainteger)%2C0))%20as%20availability%0AFROM%20bicimad&amp;sw_lat=40.40558820460202&amp;sw_lon=-3.7302875518798824&amp;ne_lat=40.43335959357837&amp;ne_lon=-3.65870475769043" webkitallowfullscreen="" width="100%"></iframe>
-		<div class="app">
-			
-        </div>
+        <iframe allowfullscreen="true" 
+			mozallowfullscreen="true" 
+			frameborder="0" 
+			msallowfullscreen="true" 
+			oallowfullscreen="true" 
+			height="1280px"
+		src="https://zenitram.cartodb.com/viz/b643c8ce-fa48-11e3-82b3-0e10bcd91c2b/embed_map?search=false&amp;shareable=true&amp;layer_selector=false&amp;legends=&amp;scrollwheel=true&amp;fullscreen=true&amp;sublayer_options=1&amp;sql=SELECT%20*%2C%20(availablebikes%3A%3Ainteger%2Bavailableplaces%3A%3Ainteger)%20as%20total_posts%2C%0A100*(availablebikes%3A%3Afloat%2Fnullif((availablebikes%3A%3Ainteger%2Bavailableplaces%3A%3Ainteger)%2C0))%20as%20availability%0AFROM%20bicimad&amp;sw_lat=40.40558820460202&amp;sw_lon=-3.7302875518798824&amp;ne_lat=40.43335959357837&amp;ne_lon=-3.65870475769043" webkitallowfullscreen="" width="100%"></iframe>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-        </script>
+ 		  function resizeIframe(obj) {
+			obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+		  }
+		</script>
     </body>
 </html>
